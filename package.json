@@ -1,0 +1,24 @@
+{
+  "name": "garden-socks",
+  "version": "1.0.0",
+  "description": "SOCKS proxy for a single site via Tailscale and Fly.io",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./start.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerjomarty/garden-socks.git"
+  },
+  "author": "Gerard Martin <344915+gerjomarty@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gerjomarty/garden-socks/issues"
+  },
+  "homepage": "https://github.com/gerjomarty/garden-socks#readme",
+  "dependencies": {
+    "simple-socks": "^3.1.0"
+  }
+}
