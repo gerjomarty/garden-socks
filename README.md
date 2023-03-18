@@ -20,7 +20,6 @@ Note that this is not intended to be a robust, privacy-preserving solution. If t
 1. Run `flyctl launch --copy-config --no-deploy`
    - This will prompt you to select an app name, you can choose your own or have one generated, but it must be unique
    - It will then prompt you for a region to deploy to
-   - It may also ask to create a `.dockerignore` file, but the one we have already is fine, so you can say no to that
 1. (If you haven't yet set up Tailscale, have a look at their [quickstart guide](https://tailscale.com/kb/1017/install/))
 1. Follow [Step 1 of this Tailscale article](https://tailscale.com/kb/1132/flydotio/) to generate an ephemeral key for the app and set it as a Fly.io secret using `flyctl secrets set`, as described
 1. Things should now be ready for deploy! Run `flyctl deploy`
@@ -38,5 +37,5 @@ Note that this is not intended to be a robust, privacy-preserving solution. If t
     - macOS: Instructions are in the [macOS User Guide](https://support.apple.com/en-gb/guide/mac-help/mchlp25912/mac)
     - Windows: Instructions are on [Microsoft's Support site](https://support.microsoft.com/en-us/windows/use-a-proxy-server-in-windows-03096c53-0554-4ffe-b6ab-8b1deee8dae1). Follow steps under "To set up a proxy server using a setup script", and use the server address as the script address
     - iOS: Press (i) button beside your chosen Wi-Fi network, press "Configure Proxy", choose "Automatic", and insert the server address in the URL field
-    - Android: Edit your chosen Wi-Fi network, "under Advanced options" for the "Proxy" option, select "Proxy Auto-Config" and enter the server address in the PAC URL field
+    - Android: Edit your chosen Wi-Fi network, under "Advanced options" for the "Proxy" option, select "Proxy Auto-Config" and enter the server address in the PAC URL field
 1. Visits to your chosen site should now go through the proxy server, while all others requests happen as normal!
